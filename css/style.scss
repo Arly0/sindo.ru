@@ -285,3 +285,59 @@ li{
   margin-right: 30px;
   font-size: 12px;
 }
+
+// Модальное окно.Чтобы протестировать - убрать display:none
+.modal2{
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.modal2__overlay{
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.modal2__body{
+  color: white;
+  width: 400px;
+  height: 450px;
+  background-color: $blueback;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -225px;
+  margin-left: -200px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px black;
+}
+.modal2__title{
+  text-align: center;
+  margin-top: 30px;
+  @include fontv-title(18px,#fff,400);
+}
+.modal2__input-email{
+  margin-top: 20px;
+}
+.offer__input[type="email"]{
+  padding-left: 13px;
+}
+.offer__input[type="password"]{
+  padding-left: 13px;
+}
+.modal2__regpass-div{
+  margin-top: 30px;
+  text-align: center;
+}
+.modal2__regpass{
+  color: #4B4D48;
+  &:hover{
+    color: #727D68;
+  }
+}

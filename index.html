@@ -22,17 +22,17 @@
                     <nav>
                         <ul class="menu d-flex">
                             <li class="menu__item">
-                                <a href="#">
+                                <a class="menu__new" href="#info-about-us">
                                     Новичкам
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="#">
+                                <a href="#sensei">
                                     Тренера
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="#">
+                                <a href="#map">
                                     Контакты
                                 </a>
                             </li>
@@ -115,12 +115,12 @@
                 <div class="col-lg-1"></div>
                 <div class="col-lg-4">
                     <form class="offer__form" method="post">
-                        <input autocomplete="off" name="name" type="text" class="offer__input offer-name" placeholder="Имя"><br>
+                        <input autocomplete="off" name="name" type="text" class="offer__input offer-name" placeholder="Имя Фамилия"><br>
                         <input autocomplete="off" id="phone" name="number" type="text" class="offer__input offer-number" placeholder="Номер"><br>
                         <input autocomplete="off" name="childName" type="text" class="offer__input offer-childName" placeholder="Имя ребёнка"><br>
                         <input autocomplete="off" name="age" type="text" class="offer__input offer-age" placeholder="Возраст"><br>
                         <input autocomplete="off" type="submit" name="submit" class="offer__submit" value="Отправить">
-                        <form>
+                        </form>
                 </div>
             </div>
         </div>
@@ -229,6 +229,26 @@
             </div>
         </div>
     </footer>
+    <div id="modal2" class="modal2">
+        <div class="modal2__overlay">
+            <div class="modal2__body">
+                <h4 class="modal2__title">
+                    Введите данные
+                </h4>
+                <hr class="hr-pink">
+                <form class="modal2__form" id="modal2__form" action="" method="post">
+                <input class="modal2__input-email offer__input" type="email" placeholder="Введите почту" autocomplete="off" name="email">
+                <input class="modal2__input-password offer__input" type="password" placeholder="Введите пароль" autocomplete="off" name="password">
+                    <input autocomplete="off" type="submit" name="submit" class="offer__submit modal2__btn" value="Отправить">
+                </form>
+                <div class="modal2__regpass-div">
+                <a href="#" class="modal2__regpass">
+                    Забыли пароль?
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
