@@ -1,0 +1,41 @@
+
+/* const value */
+/* color */
+$blueback: #13182B;
+$redback: #E43D4E;
+$grayback: #8a898a;
+
+
+
+/* font_title */
+@mixin fontv-title($sizef, $col){
+	color: $col;
+	font-family: Oswald;
+	font-weight: 400;
+	font-size: $sizef;
+	text-transform: uppercase;
+}
+
+/* font_text */
+@mixin fontv-text($sizef, $col){
+	color: $col;
+	font-family: "Open sans", "Century Gothic", Regular;
+	font-size: $sizef;
+}
+
+/* indent content blocks */
+@mixin content-indent($hei-indent){
+	margin: 0px;
+	background-color: $blueback;
+	width: 100%;
+	height: $hei-indent;
+}
+
+@mixin hr-pink($sizef){
+	position: absolute;
+	width: $sizef;
+	left: auto;
+	border-color: $redback;
+	background-color: $redback;
+}
+

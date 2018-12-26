@@ -1,0 +1,32 @@
+/*-
+colors
+*/
+$blueback: #13182B;
+$redback: #E43D4E;
+$grayback: #8a898a;
+
+/* font_title */
+@mixin fontv-title($sizef, $col, $weig){
+  color: $col;
+  font-family: Oswald, sans-serif;
+  font-weight: $weig;
+  font-size: $sizef;
+  text-transform: uppercase;
+}
+
+@mixin fontv-text($sizef, $col, $weig){
+  color: $col;
+  font-family: Ubuntu, sans-serif;
+  font-weight: $weig;
+  font-size: $sizef;
+  text-transform: none;
+}
+
+// hd
+@mixin hr-pink($sizef){
+  width: $sizef;
+  left: auto;
+  border-color: $redback;
+  background-color: $redback;
+  height: 1px;
+}

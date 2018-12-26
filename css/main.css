@@ -1,0 +1,325 @@
+/*-
+colors
+*/
+/* font_title */
+body, html {
+  margin: 0;
+  width: 100%; }
+
+ul, li {
+  padding: 0;
+  margin: 0; }
+
+.hr-pink {
+  width: 80px;
+  left: auto;
+  border-color: #E43D4E;
+  background-color: #E43D4E;
+  height: 1px; }
+
+.hr-pink-long {
+  width: 250px;
+  left: auto;
+  border-color: #E43D4E;
+  background-color: #E43D4E;
+  height: 1px; }
+
+.hr-vertical {
+  height: 60px;
+  border: none;
+  width: 2px; }
+
+.header {
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  height: auto;
+  background-color: #13182B; }
+
+.img-logo {
+  width: 130px;
+  height: auto; }
+
+.menu__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .menu__item a {
+    transition: 0.1s linear;
+    margin-top: 56px;
+    color: #fff;
+    text-decoration: none; }
+    .menu__item a:hover {
+      color: #E43D4E; }
+
+.menu {
+  width: 100%;
+  display: grid; }
+
+li {
+  list-style-type: none; }
+
+.btn {
+  margin-top: 43px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #E43D4E;
+  background: none;
+  color: white;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase; }
+  .btn:hover {
+    color: #E43D4E; }
+  .btn:hover, .btn.active, .btnfocus {
+    outline: none;
+    outline-offset: 0; }
+
+.karate-kick-img {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/karate_kick.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%; }
+
+.info {
+  padding-top: 100px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.info__title {
+  font-size: 24px; }
+
+.info__title_redback {
+  color: #E43D4E; }
+
+.info__text {
+  width: 40%;
+  font-weight: 500;
+  padding-top: 10px;
+  font-size: 14px;
+  text-transform: none;
+  color: #797979; }
+
+.info__send {
+  border: 1px solid #E43D4E;
+  background-color: #E43D4E;
+  text-transform: uppercase;
+  width: 66%;
+  height: 50px;
+  color: #fff;
+  font-size: 18px; }
+  .info__send a {
+    margin-top: 9px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none; }
+  .info__send:hover {
+    background: none;
+    color: #E43D4E;
+    cursor: pointer; }
+
+.info-about-us {
+  color: white;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 150px;
+  background-color: #13182B; }
+
+.img-info {
+  width: 100%; }
+
+.about__title {
+  font-size: 24px; }
+
+.about__text, .about__text_gray {
+  color: #fff;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  font-size: 14px; }
+  .about__text a, .about__text_gray a {
+    text-decoration: underline; }
+  .about__text a:hover, .about__text_gray a:hover {
+    color: #E43D4E; }
+  .about__text_gray, .about__text_gray_gray {
+    color: #797979; }
+
+.hr-section {
+  margin: 0;
+  background-color: dimgray;
+  width: 100%;
+  height: 0.3px;
+  margin-top: 60px; }
+
+.offer {
+  background-color: #13182B;
+  padding: 60px 0 85px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.offer__title {
+  font-size: 24px;
+  text-align: center; }
+
+.offer__content {
+  padding-top: 50px; }
+
+.offer__input[type="text"] {
+  padding-left: 13px; }
+
+.offer__input {
+  border-radius: 3px;
+  font-family: Ubuntu, sans-serif;
+  border: none;
+  color: #fff;
+  background-color: #080a13;
+  height: 60px;
+  width: 70%;
+  margin: 0 0 25px 15%; }
+
+.offer__submit {
+  background-color: #E43D4E;
+  border: none;
+  color: #000;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  margin-left: 25%; }
+
+.sensei {
+  background-color: #13182B;
+  background-image: url("../img/gloves.png"); }
+
+.sensei__title {
+  margin: 70px 0 65px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center; }
+
+.about-sensei {
+  height: 400px;
+  width: 100%;
+  background-color: #13182B;
+  margin-bottom: 110px; }
+
+.about-sensei__img {
+  width: 100%;
+  height: auto; }
+
+.about-sensei__name {
+  color: #E43D4E;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px; }
+
+.about-sensei ul {
+  display: block;
+  width: 100%;
+  margin-left: 60px; }
+
+.icnos {
+  width: 100%;
+  height: auto;
+  margin-top: 22px; }
+
+.icons__social a {
+  margin-right: 28px; }
+
+.fa {
+  color: #fff; }
+  .fa:hover {
+    color: #E43D4E; }
+
+.sensei-text {
+  color: #fff;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none; }
+
+.arrow {
+  color: #E43D4E;
+  margin-top: 185px; }
+
+.map {
+  background-color: #13182B;
+  width: 100%;
+  height: auto;
+  padding: 120px 0 100px 0; }
+
+.map__googlemap {
+  opacity: 0.5; }
+  .map__googlemap:hover {
+    opacity: 1; }
+
+.map__title {
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase; }
+
+.map__adresses {
+  color: none;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: none; }
+  .map__adresses:hover {
+    color: #E43D4E; }
+
+.map__text {
+  color: #4f5158;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none; }
+
+.footer {
+  color: #6b6b6b;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  padding: 35px 0 35px 0; }
+  .footer h3 {
+    font-size: 14px; }
+  .footer .fa {
+    color: deepskyblue; }
+
+.footer__twitter {
+  color: dodgerblue;
+  margin-right: 30px;
+  font-size: 12px; }
+
+/*# sourceMappingURL=main.css.map */

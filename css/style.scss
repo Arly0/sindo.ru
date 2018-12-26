@@ -1,0 +1,287 @@
+@import "constants.scss";
+
+body,html{
+  margin: 0;
+  width: 100%;
+}
+ul,li{
+  padding: 0;
+  margin: 0;
+}
+.hr-pink{
+  @include hr-pink(80px);
+}
+.hr-pink-long{
+  @include hr-pink(250px);
+}
+.hr-vertical{
+  height: 60px;
+  border: none;
+  width: 2px;
+}
+/// первая часть
+.header{
+  @include fontv-title(18px,#fff,500);
+  width: 100%;
+  height: auto;
+  background-color: $blueback;
+}
+.img-logo{
+  width: 130px;
+  height: auto;
+}
+.menu__item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  a{
+    transition: 0.1s linear;
+    margin-top: 56px;
+    color:#fff;
+    text-decoration: none;
+    &:hover{
+      color: $redback;}
+  }
+}
+.menu{
+  width: 100%;
+  display: grid;
+}
+li{
+  list-style-type: none;
+}
+.btn{
+  margin-top:43px;
+  width: 100%;
+  height: 50px;
+  border:1px solid $redback;
+  background: none;
+  @include fontv-title(18px, white,500);
+
+  &:hover{
+    color: $redback;}
+  &:hover,&.active,&focus{
+    outline:none;
+    outline-offset: 0;
+  }
+}
+// второй раздел
+.karate-kick-img{
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/karate_kick.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+.info{
+  padding-top: 100px;
+  @include fontv-title(14px,#fff,500);
+}
+.info__title{
+  font-size: 24px;
+}
+.info__title_redback{
+  color: $redback;
+}
+.info__text{
+  width: 40%;
+  font-weight: 500;
+  padding-top: 10px;
+  font-size: 14px;
+  text-transform: none;
+  color: #797979;
+}
+.info__send{
+  border:1px solid $redback;
+  background-color: $redback;
+  text-transform: uppercase;
+  width: 66%;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  a{
+    margin-top: 9px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover{
+    background: none;
+    color: $redback;
+    cursor: pointer;
+  }
+}
+
+//третий раздел(ифно)
+.info-about-us{
+  @include fontv-title(18px, white,500);
+  padding-top: 150px;
+  background-color: $blueback;
+}
+.img-info{
+  width: 100%;
+}
+.about__title{
+  font-size: 24px;
+}
+.about__text, .about__text_gray{
+  @include fontv-text(14px,#fff,400);
+  font-size: 14px;
+
+  a{
+    text-decoration: underline;
+  }
+  a:hover{
+    color: $redback;
+  }
+  &_gray{
+    color: #797979;
+  }
+}
+
+.hr-section{
+  margin: 0;
+  background-color: dimgray;
+  width: 100%;
+  height: 0.3px;
+  margin-top: 60px;
+}
+// четвертый раздел (оффер)
+.offer{
+  background-color: $blueback;
+  padding: 60px 0 85px;
+  @include fontv-title(14px,#fff,400);
+}
+.offer__title{
+  font-size: 24px;
+  text-align: center;
+}
+.offer__content{
+  padding-top: 50px;
+}
+.offer__video{
+
+}
+.offer__input[type="text"]{
+  padding-left: 13px;
+}
+.offer__input{
+  border-radius: 3px;
+  font-family: Ubuntu, sans-serif;
+  border: none;
+  color: #fff;
+  background-color: #080a13;
+  height: 60px;
+  width: 70%;
+  margin: 0 0 25px 15%;
+}
+.offer__submit{
+  background-color: $redback;
+  border: none;
+  @include fontv-title(18px,#000,400);
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  margin-left: 25%;
+}
+
+// пятый раздел (тренера)
+.sensei{
+  background-color: $blueback;
+  background-image: url("../img/gloves.png");
+}
+.sensei__title{
+  margin: 70px 0 65px;
+  @include fontv-title(24px,#fff,500);
+  width: 100%;
+  text-align: center;
+}
+.about-sensei{
+  height: 400px;
+  width: 100%;
+  background-color: $blueback;
+  margin-bottom: 110px;
+}
+.about-sensei__img{
+  width: 100%;
+  height: auto;
+}
+.about-sensei__name{
+  @include fontv-title(18px,$redback,500);
+  text-align: center;
+  margin-top: 30px;
+}
+.about-sensei ul{
+  display: block;
+  width: 100%;
+  margin-left: 60px;
+}
+.icnos{
+  width: 100%;
+  height: auto;
+  margin-top: 22px;
+}
+.icons__social a{
+  margin-right: 28px;
+}
+.fa{
+  color: #fff;
+  &:hover{
+    color: $redback;
+  }
+}
+.sensei-text{
+  @include fontv-text(14px,#fff,400);
+}
+.arrow{
+  color: $redback;
+  margin-top: 185px;
+}
+
+//шестая секция(карта)
+.map{
+  background-color: $blueback;
+  width: 100%;
+  height: auto;
+  padding: 120px 0 100px 0;
+}
+.map__googlemap{
+  opacity: 0.5;
+  &:hover{
+    opacity: 1;
+  }
+}
+.map__title{
+  @include fontv-title(24px,#fff,400);
+}
+.map__adresses{
+  @include fontv-text(18px,none,400);
+  &:hover{
+    color: $redback;
+  }
+}
+.map__text{
+  @include fontv-text(14px,#4f5158,400);
+}
+
+//подвал
+.footer{
+  @include fontv-text(14px,#6b6b6b,400);
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  padding: 35px 0 35px 0;
+  h3{
+    font-size: 14px;
+  }
+  .fa{
+    color: deepskyblue;
+  }
+}
+.footer__twitter{
+  color: dodgerblue;
+  margin-right: 30px;
+  font-size: 12px;
+}
