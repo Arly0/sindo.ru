@@ -248,6 +248,8 @@ li{
   padding: 120px 0 100px 0;
 }
 .map__googlemap{
+  width: 100%;
+  height: 375px;
   opacity: 0.5;
   &:hover{
     opacity: 1;
@@ -296,6 +298,43 @@ li{
   left: 0;
   top: 0;
 }
+.close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border: 4px solid #e62f57;
+  border-radius: 50%;
+}
+
+.close:before,
+.close:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 8px;
+  width: 21px;
+  height: 4px;
+  background: #e62f57;
+}
+
+.close:before {
+  webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close:after {
+  webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.modal2__close{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
 .modal2__overlay{
   background-color: rgba(0,0,0,0.7);
   position: fixed;
@@ -319,7 +358,7 @@ li{
 }
 .modal2__title{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   @include fontv-title(18px,#fff,400);
 }
 .modal2__input-email{
@@ -340,4 +379,7 @@ li{
   &:hover{
     color: #727D68;
   }
+}
+.show-modal-block{
+  display:  block !important;
 }
