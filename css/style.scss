@@ -64,11 +64,18 @@ li{
     outline-offset: 0;
   }
 }
+.label{
+  font-size: 32px;
+}
+.label, .toggle{
+  display: none;
+}
 // второй раздел
 .karate-kick-img{
   width: 100%;
   height: 500px;
   background-image: url("../img/karate_kick.png");
+  background-color: #020510;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -190,6 +197,8 @@ li{
 // пятый раздел (тренера)
 .sensei{
   background-color: $blueback;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url("../img/gloves.png");
 }
 .sensei__title{
@@ -382,4 +391,36 @@ li{
 }
 .show-modal-block{
   display:  block !important;
+}
+
+
+//медиа запросы
+// 768
+@media (max-width: 992px) {
+  .menu-hide{
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .btn{
+    display: none;
+  }
+  .header{
+    position: relative;
+  }
+  .label{
+    position: absolute;
+    top: 40px;
+    left: 90%;
+    display: block;
+    cursor: pointer;
+    width: 32px;
+  }
+  .menu{
+    display: block;
+  }
+  .menu__item{
+    display: block;
+    width: 100%;
+  }
 }
