@@ -10,6 +10,10 @@ ul, li {
   padding: 0;
   margin: 0; }
 
+.hr-hide {
+  display: none;
+  width: 100%; }
+
 .hr-pink {
   width: 80px;
   left: auto;
@@ -250,13 +254,25 @@ li {
 
 .about-sensei ul {
   display: block;
-  width: 100%;
-  margin-left: 60px; }
+  width: 100%; }
+
+ul, li {
+  padding: 0;
+  margin: 0; }
+
+.icons > .icons__social {
+  display: inline-block; }
 
 .icnos {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: auto;
   margin-top: 22px; }
+
+.icons__social {
+  text-align: center; }
 
 .icons__social a {
   margin-right: 28px; }
@@ -273,9 +289,14 @@ li {
   font-size: 14px;
   text-transform: none; }
 
-.arrow {
-  color: #E43D4E;
+.sensei__awesome {
+  text-decoration: none;
   margin-top: 185px; }
+  .sensei__awesome:hover {
+    text-decoration: none; }
+
+.arrow {
+  color: #E43D4E; }
 
 .map {
   background-color: #13182B;
@@ -328,10 +349,18 @@ li {
   .footer .fa {
     color: deepskyblue; }
 
+.footer__sindo, .footer__twitter, .footer__webmaster {
+  display: inline; }
+
 .footer__twitter {
   color: dodgerblue;
   margin-right: 30px;
   font-size: 12px; }
+
+.right-div {
+  display: inline;
+  float: right;
+  clear: right; }
 
 .modal2 {
   display: none;
@@ -452,6 +481,85 @@ li {
 
   .menu__item {
     display: block;
-    width: 100%; } }
+    width: 100%;
+    margin-top: 30px;
+    border-bottom: 1px solid #fff; }
+
+  .hr-hide {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #fff; }
+
+  .info__title {
+    width: 50%; }
+
+  .info__text {
+    width: 40%; }
+
+  .info__send {
+    margin-top: 20px;
+    width: 30%; }
+
+  .about__title {
+    margin-top: 20px;
+    text-align: center; }
+
+  .hr-marg {
+    margin-left: calc(50% - 40px); }
+
+  .offer-name {
+    margin-top: 25px; }
+
+  .offer__input {
+    width: 50%;
+    margin-left: 25%; }
+
+  .offer__submit-adapt {
+    width: 25%;
+    margin-left: calc(75% / 2); }
+
+  .about-sensei {
+    margin-top: -30px;
+    width: 40%;
+    height: 400px;
+    margin-left: 30%; }
+
+  .about-sensei__img {
+    width: 100%;
+    height: auto; }
+
+  .sensei {
+    position: relative;
+    background-image: none; }
+    .sensei .hr-hide {
+      background-color: dimgray; }
+
+  .about-sensei {
+    background-color: #080A13; }
+
+  .sensei-text {
+    width: 70%;
+    margin: -50px 0 0 15%; }
+
+  .sensei__awesome {
+    margin: 0; }
+
+  .sensei__next {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 280px;
+    left: 70%; }
+
+  .map__title {
+    text-align: center;
+    margin-top: 30px; }
+
+  .map__center-div {
+    text-align: center; }
+
+  .map__text {
+    text-align: justify; } }
 
 /*# sourceMappingURL=main.css.map */

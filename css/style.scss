@@ -8,6 +8,10 @@ ul,li{
   padding: 0;
   margin: 0;
 }
+.hr-hide{
+  display: none;
+  width: 100%;
+}
 .hr-pink{
   @include hr-pink(80px);
 }
@@ -225,12 +229,24 @@ li{
 .about-sensei ul{
   display: block;
   width: 100%;
-  margin-left: 60px;
+}
+ul,li{
+  padding: 0;
+  margin: 0;
+}
+.icons > .icons__social{
+  display: inline-block;
 }
 .icnos{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: auto;
   margin-top: 22px;
+}
+.icons__social{
+  text-align: center;
 }
 .icons__social a{
   margin-right: 28px;
@@ -244,9 +260,15 @@ li{
 .sensei-text{
   @include fontv-text(14px,#fff,400);
 }
+.sensei__awesome{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+  margin-top: 185px;
+}
 .arrow{
   color: $redback;
-  margin-top: 185px;
 }
 
 //шестая секция(карта)
@@ -291,10 +313,18 @@ li{
     color: deepskyblue;
   }
 }
+.footer__sindo,.footer__twitter,.footer__webmaster{
+  display: inline;
+}
 .footer__twitter{
   color: dodgerblue;
-  margin-right: 30px;
+  margin-right:30px;
   font-size: 12px;
+}
+.right-div{
+  display: inline;
+  float: right;
+  clear: right;
 }
 
 // Модальное окно.Чтобы протестировать - убрать display:none
@@ -422,5 +452,93 @@ li{
   .menu__item{
     display: block;
     width: 100%;
+    margin-top: 30px;
+    border-bottom: 1px solid #fff;
+  }
+   .hr-hide{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #fff;
+  }
+
+  // второй раздел
+  .info__title{
+    width: 50%;
+  }
+  .info__text{
+    width: 40%;
+  }
+  .info__send{
+    margin-top: 20px;
+    width: 30%;
+  }
+  .about__title{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .hr-marg{
+    margin-left: calc(50% - 40px);
+  }
+
+  //третий раздел
+  .offer-name{
+    margin-top: 25px;
+  }
+  .offer__input{
+    width: 50%;
+    margin-left: 25%;
+  }
+  .offer__submit-adapt{
+    width: 25%;
+    margin-left: calc(75% / 2);
+  }
+
+  //четвертый раздел
+  .about-sensei{
+    margin-top: -30px;
+    width: 40%;
+    height: 400px;
+    margin-left: 30%;
+  }
+  .about-sensei__img{
+    width: 100%;
+    height: auto;
+  }
+  .sensei{
+    position: relative;
+    background-image: none;
+    .hr-hide{
+      background-color: dimgray;
+    }
+  }
+  .about-sensei{
+    background-color: #080A13;
+  }
+  .sensei-text{
+    width: 70%;
+    margin: -50px 0 0 15%;
+  }
+  .sensei__awesome{
+    margin: 0;
+  }
+  .sensei__next{
+    width: auto;
+    height: auto;
+    position:absolute;
+        top: 280px;
+        left: 70%;
+  }
+
+  //пятый блок
+  .map__title{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .map__center-div{
+    text-align: center;
+  }
+  .map__text{
+    text-align: justify;
   }
 }
