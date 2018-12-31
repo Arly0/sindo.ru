@@ -93,8 +93,10 @@ li {
   height: 500px;
   background-image: url("../img/karate_kick.png");
   background-color: #020510;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   max-width: 100%; }
 
 .info {
@@ -219,8 +221,10 @@ li {
 
 .sensei {
   background-color: #13182B;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   background-image: url("../img/gloves.png"); }
 
 .sensei__title {
@@ -530,8 +534,7 @@ ul, li {
     height: auto; }
 
   .sensei {
-    position: relative;
-    background-image: none; }
+    position: relative; }
     .sensei .hr-hide {
       background-color: dimgray; }
 
