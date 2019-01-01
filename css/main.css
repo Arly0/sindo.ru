@@ -294,10 +294,13 @@ ul, li {
   text-transform: none; }
 
 .sensei__awesome {
-  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
   margin-top: 185px; }
-  .sensei__awesome:hover {
-    text-decoration: none; }
+  .sensei__awesome:hover, .sensei__awesome:active, .sensei__awesome:focus {
+    outline: none;
+    outline-offset: 0; }
 
 .arrow {
   color: #E43D4E; }
@@ -546,6 +549,7 @@ ul, li {
     margin: -50px 0 0 15%; }
 
   .sensei__awesome {
+    text-decoration: none;
     margin: 0; }
 
   .sensei__next {
