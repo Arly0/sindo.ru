@@ -207,6 +207,7 @@ li {
   margin: 0 0 25px 15%; }
 
 .offer__submit {
+  cursor: pointer;
   background-color: #E43D4E;
   border: none;
   color: #000;

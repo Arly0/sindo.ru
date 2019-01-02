@@ -191,6 +191,7 @@ li{
   margin: 0 0 25px 15%;
 }
 .offer__submit{
+  cursor: pointer;
   background-color: $redback;
   border: none;
   @include fontv-title(18px,#000,400);
