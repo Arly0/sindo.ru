@@ -112,16 +112,16 @@
             </div>
             <div class="row offer__content">
                 <div class="col-lg-6">
-                    <iframe class="offer__video" width="100%" height="315" src="https://www.youtube.com/embed/zCPw56fQzrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                    <iframe class="offer__video animated wow fadeInLeft" width="100%" height="315" src="https://www.youtube.com/embed/zCPw56fQzrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-4">
-                    <form class="offer__form animated fadeInRightBig" method="post">
-                        <input autocomplete="off" name="name" type="text" class="offer__input offer-name" placeholder="Имя Фамилия"><br>
-                        <input autocomplete="off" id="phone" name="number" type="text" class="offer__input offer-number" placeholder="Номер"><br>
-                        <input autocomplete="off" name="childName" type="text" class="offer__input offer-childName" placeholder="Имя ребёнка"><br>
-                        <input autocomplete="off" name="age" type="text" class="offer__input offer-age" placeholder="Возраст"><br>
-                        <input autocomplete="off" type="submit" name="submit" class="offer__submit offer__submit-adapt" value="Отправить">
+                    <form action="server/sendMail.php" class="offer__form animated fadeInRight wow" method="post">
+                        <input required autocomplete="off" name="offer_name" type="text" class="offer__input offer-name" placeholder="Имя Фамилия" maxlength="35" pattern="[А-Яа-яЁё]*\s[А-Яа-яЁё]*"><br>
+                        <input required autocomplete="off" id="offer_phone" name="number" type="text" class="offer__input offer-number" placeholder="Номер"><br>
+                        <input required autocomplete="off" name="offer_childName" type="text" class="offer__input offer-childName" placeholder="Имя ребёнка" maxlength="15" pattern="[А-Яа-яЁё]*"><br>
+                        <input required autocomplete="off" name="offer_age" type="text" class="offer__input offer-age" placeholder="Возраст" maxlength="2" pattern="/d*"><br>
+                        <input autocomplete="off" type="submit" name="offer_submit" class="offer__submit offer__submit-adapt" value="Отправить">
                         </form>
                 </div>
             </div>
@@ -246,7 +246,11 @@
                 <form class="modal2__form" id="modal2__form" action="" method="post">
                 <input class="modal2__input-email offer__input" type="email" placeholder="Введите почту" autocomplete="off" name="email">
                 <input class="modal2__input-password offer__input" type="password" placeholder="Введите пароль" autocomplete="off" name="password">
-                    <input autocomplete="off" type="submit" name="submit" class="offer__submit modal2__btn" value="Отправить">
+                    <input autocomplete="off" type="submit" name="modal_submit" class="offer__submit modal2__btn" value="Отправить">
+                    <br>
+                    <div class="checkbox">
+                    <input type="checkbox" name="remember" class=" modal2__checkbox" value="Set"><span class="modal2__remember">Запомнить меня(1 неделя)</span>
+                    </div>
                 </form>
                 <div class="modal2__regpass-div">
                 <a href="#" class="modal2__regpass">
@@ -259,6 +263,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="build/js/all.js"></script>
+    <script>new WOW().init();</script>
     <script src="build/js/initMap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSgK4DoVtEqshdj0kPfdWvDFmqk2Epyvs&callback=initMap" type="text/javascript">
     </script>
