@@ -12,14 +12,14 @@
 
     <header id ="header" class="header">
         <div class="container">
-            <div class="row">
+            <div class="row animated fadeInDownBig">
                 <div class="col-lg-2">
                     <img class="img-logo" src="build/img/logo_karate_1.png" alt="logo">
                     <input type="checkbox" id="toggle" class="toggle">
-                    <label class="label" for="toggle">&#9776</label>
+                    <label class="label" for="toggle"><i class="fa fa-bars"></i></label>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5 menu-hide">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-5 animated fadeInDownBig menu-hide">
                     <nav>
                         <hr class="hr-hide">
                         <ul class="menu d-flex">
@@ -41,12 +41,12 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2">
-                    <button class="btn">
-                        Войти
-                    </button>
-                </div>
+                <!--<div class="col-lg-1"></div>-->
+                <!--<div class="col-lg-2">-->
+                    <!--<button class="btn">-->
+                        <!--Войти-->
+                    <!--</button>-->
+                <!--</div>-->
             </div>
         </div>
     </header>
@@ -116,11 +116,11 @@
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-4">
-                    <form action="server/sendMail.php" class="offer__form animated fadeInRight wow" method="post">
+                    <form action="serverSide/sendMail.php" class="offer__form animated fadeInRight wow" method="POST">
                         <input required autocomplete="off" name="offer_name" type="text" class="offer__input offer-name" placeholder="Имя Фамилия" maxlength="35" pattern="[А-Яа-яЁё]*\s[А-Яа-яЁё]*"><br>
-                        <input required autocomplete="off" id="offer_phone" name="number" type="text" class="offer__input offer-number" placeholder="Номер"><br>
+                        <input required autocomplete="off" id="offer_phone" name="offer_number" type="text" class="offer__input offer-number" placeholder="Номер"><br>
                         <input required autocomplete="off" name="offer_childName" type="text" class="offer__input offer-childName" placeholder="Имя ребёнка" maxlength="15" pattern="[А-Яа-яЁё]*"><br>
-                        <input required autocomplete="off" name="offer_age" type="text" class="offer__input offer-age" placeholder="Возраст" maxlength="2" pattern="/d*"><br>
+                        <input required autocomplete="off" name="offer_age" type="text" class="offer__input offer-age" placeholder="Возраст" maxlength="2"><br>
                         <input autocomplete="off" type="submit" name="offer_submit" class="offer__submit offer__submit-adapt" value="Отправить">
                         </form>
                 </div>
